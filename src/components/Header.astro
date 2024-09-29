@@ -2,14 +2,16 @@
 import Logo from '../components/Logo.astro';
 ---
 
-<header class="flex flex-wrap items-center gap-4 pt-6 pb-16 sm:pt-12 sm:pb-24">
-    <nav class="flex flex-col items-center gap-2">
+<header class="flex flex-wrap gap-4 pt-6 pb-16 sm:pt-12 sm:pb-24">
+    <nav class="flex flex-col items-center gap-2 w-full">
         <a href="/">
             <Logo />
         </a>
-        <div>
-            <h2 class="text-center">Dr. José Pérez Rodríguez</h2>
-            <h2 class="text-center">Urólogo - Especialista en Niños y Adolescentes</h2>
+        <div class="text-center">
+            <h2 class="flex flex-col text-brandMain">DR. JOSE PEREZ RODRIGUEZ
+                <span class="text-2xl">Médico Urólogo</span>
+                <span class="text-2xl">Especialista en Niños y Adolescentes</span>
+            </h2>
         </div>
     </nav>
 </header>
