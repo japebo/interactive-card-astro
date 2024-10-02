@@ -8,26 +8,14 @@ export default {
         extend: {
             colors: {
                 neutral: colors.neutral,
-                brandMain: '#1ea8ab',
+                "dark-green": '#047687',
+                "light-green": '#09ABB2',
+                "light-grey": '#BFBFBF',
+                "text-content": '#245367',
             },
             fontFamily: {
                 sans: ['Asap', ...defaultTheme.fontFamily.sans]
             }
         }
     },
-    daisyui: {
-        themes: [
-            {
-                lofi: {
-                    ...require('daisyui/src/theming/themes')['lofi'],
-                    primary: '#F67280',
-                    'primary-content': '#1f1f1f',
-                    secondary: '#C06C84',
-                    info: '#F67280',
-                    'info-content': '#1f1f1f'
-                }
-            }
-        ]
-    },
-    plugins: [require('daisyui')]
 };
