@@ -18,7 +18,7 @@ export default {
                 brandMain: '#1ea8ab',
             },
             fontFamily: {
-                sans: ['Inter', ...defaultTheme.fontFamily.sans]
+                sans: ['Asap', ...defaultTheme.fontFamily.sans]
             }
         }
     },
