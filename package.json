@@ -14,7 +14,6 @@
     "@astrojs/react": "^3.3.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/asap": "^5.1.0",
-    "@netlify/blobs": "^8.0.1",
     "@netlify/functions": "^2.8.1",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
@@ -27,7 +26,6 @@
   },
   "devDependencies": {
     "@types/blobshape": "^1.0.3",
-    "@types/node": "^20.12.7",
-    "daisyui": "^4.10.2"
+    "@types/node": "^20.12.7"
   }
 }
