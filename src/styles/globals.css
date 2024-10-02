@@ -61,3 +61,7 @@
 .bg-button {
     background-image: linear-gradient(180deg,#3152df95,#1e254595);
 }
+
+:root {
+    font-family: Asap, sans-serif;
+}
