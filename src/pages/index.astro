@@ -1,9 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Markdown from '../components/Markdown.astro';
-
-const handleLocationButtonClick = () => window.open('https://www.google.com.mx/maps/place/ONCODIFAR/@14.9010325,-92.2642866,17z/data=!3m1!4b1!4m6!3m5!1s0x858e0ee1b643df23:0x34334beac9a83d64!8m2!3d14.9010325!4d-92.2617117!16s%2Fg%2F11y4367lsz?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D', '_blank')
-const handleOrderAnAppointmentButtonClick = () => window.open('tel:962-466-6423', '_blank')
 ---
 
 <Layout title="Urología Dr. José Pérez Rodríguez">
@@ -35,8 +32,14 @@ const handleOrderAnAppointmentButtonClick = () => window.open('tel:962-466-6423'
             </div>
     </section>
     <section class="flex flex-col items-center gap-6 mb-6">
-        <button class="text-base text-dark-green font-semibold py-2 w-full border rounded-full border-dark-green" onclick={handleLocationButtonClick}>¿Cómo llegar?</button>
-        <button class="flex flex-row justify-center gap-2 bg-light-green text-base font-semibold py-2 w-full border rounded-full border-dark-green" onclick={handleOrderAnAppointmentButtonClick}>Agenda tu cita <img src="/icons/arrow-forward.svg" alt="right arrow icon"/></button>
+        <button id="location-button" class="text-base text-dark-green font-semibold py-2 w-full border rounded-full border-dark-green">¿Cómo llegar?</button>
+        <button id="appointment-button" class="flex flex-row justify-center gap-2 bg-light-green text-base font-semibold py-2 w-full border rounded-full border-dark-green">Agenda tu cita <img src="/icons/arrow-forward.svg" alt="right arrow icon"/></button>
     </section>
-    <!--<Markdown content={explainer} class="text-lg mb-10" />-->
+    <script>
+        const locationButton = document.getElementById('location-button')
+        locationButton.addEventListener('click', () => window.open('https://www.google.com.mx/maps/place/ONCODIFAR/@14.9010325,-92.2642866,17z/data=!3m1!4b1!4m6!3m5!1s0x858e0ee1b643df23:0x34334beac9a83d64!8m2!3d14.9010325!4d-92.2617117!16s%2Fg%2F11y4367lsz?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D', '_blank'))
+
+        const appointmentButton = document.getElementById('location-button')
+        appointmentButton.addEventListener('click', () => window.open('tel:962-466-6423', '_blank'))
+    </script>
 </Layout>
