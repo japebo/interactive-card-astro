@@ -33,7 +33,7 @@ import Markdown from '../components/Markdown.astro';
     </section>
     <section class="flex flex-col items-center gap-6 mb-6">
         <button id="location-button" class="text-base text-dark-green font-semibold py-2 w-full border rounded-full border-dark-green">¿Cómo llegar?</button>
-        <button id="appointment-button" class="flex flex-row justify-center gap-2 bg-light-green text-base font-semibold py-2 w-full border rounded-full border-dark-green">Agenda tu cita <img src="/icons/arrow-forward.svg" alt="right arrow icon"/></button>
+        <button id="appointment-button" class="flex flex-row justify-center gap-2 bg-light-green text-base font-semibold py-2 w-full border rounded-full border-dark-green">Agenda tu cita <img id='appointment-button-icon' src="/icons/arrow-forward.svg" alt="right arrow icon"/></button>
     </section>
     <script>
         const locationButton = document.getElementById('location-button')
@@ -43,3 +43,13 @@ import Markdown from '../components/Markdown.astro';
         appointmentButton.addEventListener('click', () => window.open('tel:962-466-6423', '_blank'))
     </script>
 </Layout>
+
+<style>
+    #appointment-button:hover {
+        #appointment-button-icon {
+            transition: transform 0.5s;
+            transform: translateX(10px);
+        }
+    }
+
+</style>
