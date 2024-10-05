@@ -18,6 +18,9 @@ export default {
             },
             boxShadow: {
                 "card-shadow": '0px 5px 30px 0px #00000014',
+            },
+            borderRadius: {
+                'card': '40px',
             }
         }
     },
