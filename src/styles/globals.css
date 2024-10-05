@@ -51,6 +51,10 @@
 
 a {
     text-decoration: none;
+
+    &:hover {
+        @apply text-light-green;
+    }
 }
 
 button {
