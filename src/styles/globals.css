@@ -64,8 +64,8 @@ button {
         --cta-stroke-width: calc(1 * .0625rem);
         --cta-stroke-color: #047687;
         --cta-depth-color: #047687;
-        -webkit-box-shadow: 0 0 0 var(--cta-stroke-width,0)var(--cta-stroke-color),0 .375em 0 0 var(--cta-depth-color);
-        box-shadow: 0 0 0 var(--cta-stroke-width,0)var(--cta-stroke-color),0 .375em 0 0 var(--cta-depth-color);
+        -webkit-box-shadow: 0 0 0 var(--cta-stroke-width,0) var(--cta-stroke-color), 0 .375em 0 0 var(--cta-depth-color);
+        box-shadow: 0 0 0 var(--cta-stroke-width,0) var(--cta-stroke-color), 0 .375em 0 0 var(--cta-depth-color);
         -webkit-transform: translateY(calc(-1 * .375em));
         -ms-transform: translateY(calc(-1 * .375em));
         transform: translateY(calc(-1 * .375em));
