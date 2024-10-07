@@ -21,6 +21,9 @@ export default {
             },
             borderRadius: {
                 'card': '40px',
+            },
+            height: {
+                'card': '95vh',
             }
         }
     },
