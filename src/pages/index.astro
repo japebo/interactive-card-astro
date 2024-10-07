@@ -25,7 +25,7 @@ import Markdown from '../components/Markdown.astro';
     <section class="mb-8">
             <h2 class="text-base font-bold text-light-green mb-2">Contacto:</h2>
             <div class="flex flex-col text-sm text-text-content gap-2">
-                <a class="flex flex-row gap-2" target="_blank" href="tel:962-466-6423"><img src="/icons/phone-portrait-outline.svg" alt="phone icon"/>962-466-6423</a >
+                <a id="whatsapp-link" class="flex flex-row gap-2" target="_blank"><img src="/icons/phone-portrait-outline.svg" alt="phone icon"/>962-466-6423</a >
                 <a class="flex flex-row gap-2" target="_blank" href="mailto:urologia.joseperez@gmail.com"><img src="/icons/mail-outline.svg" alt="phone icon"/>urologia.joseperez@gmail.com</a>
                 <a class="flex flex-row gap-2" target="_blank" href="https://www.facebook.com/profile.php?id=61565644105587"><img src="/icons/facebook.svg" alt="phone icon"/>Urología Dr. José Pérez Rodríguez</a>
                 <a class="flex flex-row gap-2" target="_blank" href="https://www.google.com.mx/maps/place/ONCODIFAR/@14.9010325,-92.2642866,17z/data=!3m1!4b1!4m6!3m5!1s0x858e0ee1b643df23:0x34334beac9a83d64!8m2!3d14.9010325!4d-92.2617117!16s%2Fg%2F11y4367lsz?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D"><img src="/icons/location-outline.svg" alt="phone icon"/>Clínica Oncodifar: 6ta Oriente entre 5ta Sur y 7ma Sur, Col. Centro. C.P 30830. Tapachula, Chiapas.</a>
@@ -36,11 +36,16 @@ import Markdown from '../components/Markdown.astro';
         <button id="appointment-button" class="flex flex-row justify-center gap-2 bg-light-green text-base font-semibold py-2 w-full border rounded-full border-dark-green">Agenda tu cita <img id='appointment-button-icon' src="/icons/arrow-forward.svg" alt="right arrow icon"/></button>
     </section>
     <script>
+        const whatsappNumber = '+52-962-466-6423'
+        const whatsAppHref = `https://wa.me/${whatsappNumber.replace(/-/g, '')}`
+
         const locationButton = document.getElementById('location-button')
         locationButton.addEventListener('click', () => window.open('https://www.google.com.mx/maps/place/ONCODIFAR/@14.9010325,-92.2642866,17z/data=!3m1!4b1!4m6!3m5!1s0x858e0ee1b643df23:0x34334beac9a83d64!8m2!3d14.9010325!4d-92.2617117!16s%2Fg%2F11y4367lsz?entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D', '_blank'))
 
+        document.getElementById('whatsapp-link').href = whatsAppHref
+
         const appointmentButton = document.getElementById('appointment-button')
-        appointmentButton.addEventListener('click', () => window.open('tel:962-466-6423', '_blank'))
+        appointmentButton.addEventListener('click', () => window.open(whatsAppHref, '_blank'))
     </script>
 </Layout>
 
