@@ -49,6 +49,13 @@
     }
 }
 
+#card {
+    background-image: url("public/images/blue-shape.svg"), url("public/images/yellow-shape.svg");
+    background-position: top 0 right 0, bottom 0 left 0;
+    background-size: contain, contain;
+    background-repeat: no-repeat;
+}
+
 a {
     text-decoration: none;
 

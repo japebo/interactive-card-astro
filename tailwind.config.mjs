@@ -12,6 +12,7 @@ export default {
                 "light-green": '#09ABB2',
                 "light-grey": '#FDFDFD',
                 "text-content": '#245367',
+                "grey": '#B3B3B3'
             },
             fontFamily: {
                 sans: ['Asap', ...defaultTheme.fontFamily.sans]
