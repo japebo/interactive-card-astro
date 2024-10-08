@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
+const cardHeight = '884px';
 
 export default {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     theme: {
         extend: {
+            screens: {
+                'h-lg': { 'raw': `(min-height: ${cardHeight})` },
+            },
             colors: {
                 neutral: colors.neutral,
                 "dark-green": '#047687',
@@ -24,7 +28,7 @@ export default {
                 'card': '40px',
             },
             height: {
-                'card': '95vh',
+                'card': `min(100%, ${cardHeight})`,
             }
         }
     },
